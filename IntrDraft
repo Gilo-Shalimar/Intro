@@ -1,0 +1,116 @@
+import sys
+import time
+
+x = 2
+y = 0.2
+z = 0.08
+def Bedroom():
+  print()
+  print("You woke up with a ringing in your head...")
+  print()
+  time.sleep(x)
+  print("You found yourself in an unfamiliar room...")
+  time.sleep(y)
+  print()
+  senBR1 = "UGH... It hurts like hell..."
+  for c in senBR1:
+       sys.stdout.write(c)
+       sys.stdout.flush()
+       time.sleep(y)
+  time.sleep(0.5)
+  print()
+  print()
+  senBR2 = "Where on earth am I?... Fuuu**..."
+  for c in senBR2:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(y)
+  time.sleep(0.5)
+  print()
+  print()
+  print("Looking around to see where you are...")
+  time.sleep(x)
+  print()
+  print("The room looks like a normal bedroom")
+  time.sleep(y)
+  print()
+  senBR3 = "It looks pretty normal... Wait... What is that?..."
+  for c in senBR3:
+       sys.stdout.write(c)
+       sys.stdout.flush()
+       time.sleep(y)
+  time.sleep(0.5)
+  print()
+  print()
+  TwoObjects()
+
+def TwoObjects():
+  print("There are two objects that have piqued your interest")
+  time.sleep(x)
+  print()
+  objects = ["Pictures","pictures","Letter","letter"]
+  user = ""
+  while user not in objects:
+    print("Interact: Pictures/Letter")
+    print()
+    user = input()
+    if user == "Pictures" or "pictures":
+      Pictures1()
+      
+    elif user == "Letter" or "letter":
+      #Letter1()
+      print('l')
+    else:
+      print("Please enter a valid option.")
+  time.sleep(y)
+  print()
+
+def Pictures1():
+  print()
+  print("The wall is covered in pictures")
+  print()
+  time.sleep(y)
+  print()
+  senPic1 = "Those pictures..."
+  for c in senPic1:
+       sys.stdout.write(c)
+       sys.stdout.flush()
+       time.sleep(y)
+  time.sleep(0.5)
+  print()
+  print()
+  senPic2 = "NO FUCKING WAY!!!"
+  for c in senPic2:
+       sys.stdout.write(c)
+       sys.stdout.flush()
+       time.sleep(y)
+  time.sleep(0.5)
+  print()
+  print()
+  senPic3 = "THESE ARE STOLEN PICTURES OF ME!!!"
+  for c in senPic3:
+       sys.stdout.write(c)
+       sys.stdout.flush()
+       time.sleep(y)
+  time.sleep(0.5)
+  print()
+  print()
+  senPic4 = "Who took these?!..."
+  for c in senPic4:
+       sys.stdout.write(c)
+       sys.stdout.flush()
+       time.sleep(y)
+  time.sleep(0.5)
+  print()
+  print()
+  senPic2 = "It's so creepy and disgusting..."
+  for c in senPic2:
+       sys.stdout.write(c)
+       sys.stdout.flush()
+       time.sleep(y)
+  time.sleep(0.5)
+  print()
+  print()
+  TwoObjects()
+
+Bedroom()
